@@ -1,0 +1,29 @@
+
+public class AtmControl implements AtmInterface {
+	
+	Atm_Operator operator = new Atm_Operator();
+
+	public void ViewBlance()
+	{
+		System.out.println("your Account Blance: $"+operator.getBlance());
+		
+	}
+	
+	public void DepositAomount(double DepositAmount)
+	{
+		System.out.println("Deposit sccesfully : $"+operator.getDepositAmount());
+		System.out.println(operator.getBlance()+operator.getDepositAmount());
+		 ViewBlance();
+	}
+	
+	public void WithdreawAmount(double WithdrawAmount)
+	{
+		System.out.println("Withdraw succes : $"+operator.getWithdrawAmount());
+		System.out.println(operator.getBlance()-operator.getWithdrawAmount());
+		 ViewBlance();
+		
+		
+	}
+	
+	
+}

@@ -1,0 +1,12 @@
+
+public class ATM_subClass {
+
+	public void subClass()
+	{
+		System.out.println("View Account Ballance: ");
+		   System.out.println("Deposit Ammount: ");
+		   System.out.println("Withdraw Amont: ");
+		   System.out.println("Exit: ");
+		   
+	}
+}
